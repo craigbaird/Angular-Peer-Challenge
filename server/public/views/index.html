@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Real Estate List</title>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.css" />
+    <link rel="stylesheet" href="/views/style.css">
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/data.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div ng-controller="ListingController">
+        <div ng-repeat="listing in data">
+        <div class="row" ng-class-odd="'odd'" ng-class-even="'even'">
+          <div class="col-md-3">
+            <div ng-if="listing.cost">
+            <p>Cost: {{listing.cost}}</p>
+          </div>
+          <div ng-if="listing.rent">
+            <p>Rent: {{listing.rent}}</p>
+          </div>
+        </div>
+          <div class="col-md-3">
+            <p>{{listing.sqft}}</p>
+          </div>
+          <div class="col-md-3">
+            <p>{{listing.city}}</p>
+          </div>
+          <div class="col-md-3">
+            <button ng-click="setDataNumber($index)" class="btn">Delete</button>
+          </div>
+
+        </div>
+    </div> <!--end repeat in data-->
+
+    </div> <!--end ng-controller-->
+  </div><!--close container-->
+  </body>
+</html>
