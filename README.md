@@ -1,4 +1,22 @@
 # Peer Angular Challenge - Real Estate List 
+Peer challenge appending to the DOM using angular
+
+## Instructions We Were Given
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+1. Download .zip of the project
+2. npm install
+3. npm start
+4. type localhost:5000 into a browser
+
+## Technologies Used
+- JavaScript
+- Angular
+- Express
+- Node
+- MongoDB
 
 In this assignment, we are going to work with the list of information provided in the previous weekend challenge. 
 It has been updated for correct Javascript notation for an array. Meaning that you are not working with the response from 
