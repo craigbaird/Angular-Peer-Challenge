@@ -11,6 +11,10 @@ These instructions will get you a copy of the project up and running on your loc
 3. npm start
 4. type localhost:5000 into a browser
 
+## Authors
+- Craig Baird 
+- Kevin Dahlberg
+
 ## Technologies Used
 - JavaScript
 - Angular
